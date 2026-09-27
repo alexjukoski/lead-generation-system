@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qualificação de Leads | Automação</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <div class="form-header">
+      <h2>Transforme seu Atendimento</h2>
+      <p>Preencha os dados abaixo para receber um diagnóstico de automação diretamente no seu WhatsApp.</p>
+    </div>
+
+    <!-- O id "leadForm" precisa estar exatamente assim -->
+    <form id="leadForm">
+      <div class="input-group">
+        <label for="nome">Seu Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Ex: João Silva" required>
+      </div>
+
+      <div class="input-group">
+        <label for="whatsapp">WhatsApp (com DDD)</label>
+        <input type="tel" id="whatsapp" name="whatsapp" placeholder="Ex: 42999999999" required>
+      </div>
+
+      <div class="input-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="joao@empresa.com" required>
+      </div>
+
+      <div class="input-group">
+        <label for="empresa">Empresa / Segmento</label>
+        <input type="text" id="empresa" name="empresa" placeholder="Ex: E-commerce de Moda" required>
+      </div>
+
+      <div class="input-group">
+        <label for="necessidade">Qual processo você deseja automatizar?</label>
+        <textarea id="necessidade" name="necessidade" rows="4" placeholder="Descreva brevemente o que precisa..." required></textarea>
+      </div>
+
+      <button type="submit" id="btnSubmit">
+        <span>Enviar e Abrir WhatsApp</span>
+      </button>
+    </form>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
